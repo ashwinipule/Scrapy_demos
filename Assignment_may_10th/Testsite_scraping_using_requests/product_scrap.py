@@ -19,11 +19,11 @@ def scrap_product_details(li):
         title = product.find('a',class_="title").text
         description = product.find('p',class_="description card-text").text
         price = product.find('h4',class_="price float-end card-title pull-right").text
-        ratings = product.find('p',class_="review-count float-end").text
+        review = product.find('p',class_="review-count float-end").text
         product_details['title']=title
         product_details["description"]=description
         product_details['price']=price
-        product_details["ratings"]=ratings
+        product_details["review"]=review
         print(product_details)
 find_page_count()
 
