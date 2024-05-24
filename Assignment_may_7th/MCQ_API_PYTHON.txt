@@ -1,0 +1,131 @@
+What library is commonly used to make HTTP requests in Python?
+A) http
+B) requests
+C) urllib
+D) api
+
+Ans: B) requests
+
+
+Which HTTP method is typically used to retrieve data from an API?
+A) POST
+B) GET
+C) DELETE
+D) PUT
+
+Ans: B) GET
+
+
+What is the common format of data response from RESTful APIs?
+A) XML
+B) JSON
+C) HTML
+D) All of the above
+
+Ans: B) JSON
+
+
+Which parameter in the requests.get method is used to send data to an API as part of the URL?
+A) data
+B) json
+C) params
+D) headers
+
+Ans: D) Headers
+
+What status code indicates a successful HTTP request?
+A) 404
+B) 500
+C) 200
+D) 302
+
+Ans: C) 200
+
+
+Which of the following is a valid way to add an API key as a header in a requests.get call?
+A) requests.get(url, headers={"API-Key": "your_key"})
+B) requests.get(url, auth={"API-Key": "your_key"})
+C) requests.get(url, params={"API-Key": "your_key"})
+D) requests.get(url, api_key="your_key")
+
+Ans: A) requests.get(url, headers={"API-Key": "your_key"})
+
+What does the status_code attribute of a response object represent?
+A) The content type of the response
+B) The encoding type of the response
+C) The length of the response
+D) The HTTP status of the response
+
+Ans: D) The HTTP status of the response
+
+
+Which method from the requests module should you use to send data to an API that requires JSON payload?
+A) requests.post(url, json=data)
+B) requests.put(url, data=data)
+C) requests.send(url, json=data)
+D) requests.request(url, data=data)
+
+Ans: A) requests.post(url, json=data)
+
+If an API returns a 401 status code, what does it typically mean?
+A) The server encountered an error
+B) The client made an invalid request
+C) Unauthorized access
+D) Resource not found
+
+Ans: C) Unauthorized access
+
+Which of the following is NOT a common field in an HTTP header used for API requests?
+A) Content-Type
+B) User-Agent
+C) Content-Length
+D) Timestamp
+
+Ans: D) Timestamp
+
+
+What does the allow_redirects parameter do in a requests.get call?
+A) Allows sending of additional cookies
+B) Follows or doesn't follow HTTP redirects
+C) Allows or blocks cross-site requests
+D) Permits or denies retry attempts after failure
+
+Ans: B) Follows or doesn't follow HTTP redirects
+
+How can you extract the headers from a response object in the requests library?
+A) response.headers
+B) response.get_headers()
+C) response.header
+D) response.extract_headers()
+
+Ans: A) response.headers
+
+
+
+When making a POST request to an API using the requests library, which of the following content types is incorrectly paired with its data parameter?
+A) JSON - json=
+B) URL-encoded form data - data=
+C) Multipart form data - files=
+D) Plain text - json=
+
+Ans: B) URL-encoded form data - data=
+
+
+
+What is the purpose of the timeout parameter in a requests.get call?
+A) Sets the maximum time to keep the connection open
+B) Specifies how long to wait for the server's response
+C) Delays the request by a specified amount of time
+D) Limits the number of retries after a failed request
+
+Ans: A) Specifies how long to wait for the server's response
+
+
+
+Which HTTP method is used to update a specific part of an existing resource on the server?
+A) PATCH
+B) PUT
+C) POST
+D) GET
+
+Ans: A) PATCH
