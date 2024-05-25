@@ -30,7 +30,7 @@ def get_product_details():
 
     for page in range(1,page_count+1):
 
-        print("Page number----------",page)
+        print("Page Number----------",page)
 
         url = "https://www.kotsovolos.gr/api/ext/getProductsByCategory?params=pageNumber%3D"+str(page)+"%26pageSize%3D36%26catalogId%3D10551%26langId%3D-24%26orderBy%3D5&catId=35822&storeId=10151&isCPage=false"
 
@@ -40,7 +40,7 @@ def get_product_details():
 
             data_frame = {}
 
-            print('Original product url--------',entry['UserData'][0]['seo_url'])
+            #print('Original product url--------',entry['UserData'][0]['seo_url'])
             
             product_name_greek = entry['name']
 
