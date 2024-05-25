@@ -52,6 +52,8 @@ def get_product_details():
 
             product_price = entry['price_EUR']
 
+            product_currency = entry['price'][0]['currency']
+
             if "household-appliances/fridges/fridge-freezers/" in entry['UserData'][0]['seo_url']:
                 product_url = "https://www.kotsovolos.gr/"+entry['UserData'][0]['seo_url']
             else:
@@ -67,6 +69,7 @@ def get_product_details():
             data_frame['product_url']=product_url
             data_frame['product_name']=product_name
             data_frame['product_price']=product_price
+            data_frame['Currency']=product_currency
             data_frame['product_short_desc']=product_short_desc
 
             print('product_details----------',data_frame)
