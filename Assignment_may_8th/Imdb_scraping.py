@@ -27,10 +27,8 @@ try:
         # rank.attrs['aria-label']
         year = movie.find('span', class_="sc-b189961a-8 kLaxqf cli-title-metadata-item").text
         result.append((name,rank.attrs['aria-label'],year))
-
-    #     # rating = movie.find()
-    print(result)
-    sheet.append([name,rank,year])
+        print(result)
+        sheet.append([name,rank.attrs['aria-label'],year])
 
 except Exception as e:
     print(e) 
