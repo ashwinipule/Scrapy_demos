@@ -1,0 +1,7 @@
+Assignment Questions and Answers
+
+1. What will happen if we define allowed_domains in the class and deny_domains in the LinkExtractor same, for example abc.com. Which one will take a preference?
+Ans: deny_domain in the Link Extractor takes preference.
+
+2. Why we are not getting errors in the LOG, when the robotstxt/response_status_count is 404  for the website https://books.toscrape.com/?
+Ans: The website https://books.toscrape.com/ does not contain robots.txt file, this might be the reason.  
